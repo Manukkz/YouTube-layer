@@ -1,3 +1,71 @@
-body{
-    background-color: rgb(15, 15, 15)
+/* Corpo */
+body {
+    background-color: rgb(15, 15, 15);
+    color: #eee; 
+    font-family: sans-serif; 
+}
+
+/* Cabeçalho */
+.header-container { 
+    display: flex;
+    align-items: center; 
+    padding: 10px 20px;     
+    border-bottom: 1px solid #333; 
+}
+
+/* Item Esquerdo */
+.lista {        
+    margin-right: 20px; /* Espaço entre item esquerdo e centro */
+}
+
+/* Container Central */
+.centeritem {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center; 
+    max-width: 600px; /* Adicionado limite de largura para não ficar gigante em telas largas */
+    margin: 0 auto; 
+}
+
+/* Caixa de Pesquisa */
+.text-box {
+    display: flex; 
+    align-items: center; 
+    border: 1px solid #333; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    background-color: #111; 
+    width: 100%; 
+}
+
+.text-box input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    background-color: transparent; 
+    color: #eee; 
+    flex-grow: 1; 
+    font-size: 1rem;
+}
+
+/* Botão de Pesquisa */
+.text-box .searchbutton {
+    border: none;
+    background-color: #333; /* Fundo cinza escuro */
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee; 
+}
+
+
+
+/* Item Direito */
+.item-direita {
+    
+    flex-shrink: 0; 
+    margin-left: auto; 
+    padding-left: 20px; /* Espaço entre centro e item direito */
 }
