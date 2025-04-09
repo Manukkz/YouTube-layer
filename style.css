@@ -80,16 +80,16 @@ body {
 .Centerright .microphonebutton {
     border: none;
     border-radius: 50%;
-    width: 58px;
-    height: 58px;
+    width: 34px;
+    height: 34px;
     background-color: #333;
-    margin: 1px 13px;
+    margin: 0px 11px;
     cursor: pointer;
     display: inline-block;
     align-items: center;
     justify-content: center;
     color: #eee;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 
