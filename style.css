@@ -13,11 +13,14 @@ body {
     border-bottom: 1px solid #333;
 }
 
-                           /* Item Esquerdo */
-.lista {
-    margin-right: 20px;
-    /* Espaço entre item esquerdo e centro */
+                            /* Item Esquerdo */
+.lista .listbutton{
+    margin-right: 20px;  /* Espaço entre item esquerdo e centro */
     font-size: 22px;
+    border: none;
+    background-color:rgb(15, 15, 15);
+    color: #eee;
+    cursor: pointer;
 }
 
                                                   /* Container Central */
@@ -92,9 +95,7 @@ body {
     font-size: 15px;
 }
 
-
-
-                                                  /* Item na Direita */
+                               /* Item na Direita */
 
 .rightitem .plusbutton {
     background-color: #333;
