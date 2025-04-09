@@ -94,19 +94,17 @@ body {
 
 
                                                   /* Item na Direita */
-/* Estilos para o botão DENTRO do .rightitem (opcional, ajuste como precisar) */
+
 .rightitem .plusbutton {
-    /* Seus estilos para o botão aqui */
-    /* Ex: background, border, padding, font-size */
     background-color: #333;
     border: none;
-    border-radius: 50%; /* Para deixar o botão redondo */
-    width: 40px;        /* Ajuste o tamanho */
-    height: 40px;       /* Ajuste o tamanho */
+    border-radius: 50%; 
+    width: 40px;        
+    height: 40px;       
     color: #eee;
-    font-size: 18px;     /* Tamanho do ícone '+' */
+    font-size: 18px;     
     cursor: pointer;
-    flex: 1;       /* Para centralizar o ícone dentro do botão */
+    flex: 1;       
     align-items: flex-end;
     justify-content: flex-end;
     margin-left: 0 auto;
@@ -117,7 +115,7 @@ body {
 }
 
 /* ----- CORES PARA DEBUG ----- */
-.lista {
+/* .lista {
     background-color: rgba(255, 0, 0, 0.3); 
 }
 .centeritem {
@@ -125,5 +123,5 @@ body {
 }
 .rightitem {
     background-color: rgba(0, 0, 255, 0.3); 
-}
+} */
 /* ----- FIM DAS CORES PARA DEBUG ----- */
