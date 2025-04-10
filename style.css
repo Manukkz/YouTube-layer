@@ -94,6 +94,9 @@ body {
     color: #eee;
     font-size: 15px;
 }
+.Centerright .microphonebutton:hover{
+    background-color: #444;
+}
 
                                /* Item na Direita */
 
@@ -116,6 +119,44 @@ body {
 .rightitem .plusbutton:hover {
     background-color: #444;
 }
+
+.rightitem .notification{
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 18px;
+    color: #eee;
+
+}
+
+.rightitem .notification:hover {
+    background-color: #444;
+}
+
+                        /* IMAGEM A DIREITA */
+
+.rightitem .image{
+    width: 42px;
+    top: -100px;
+    cursor: pointer;
+    padding: px 3px;
+    margin: 0 1px;
+    border-radius: 50%;
+    background-color: transparent;
+    overflow: hidden;
+    background-position: center;
+    border-image-repeat: stretch;
+
+}
+
+.rightitem .image:hover{
+    background-color: #444;
+}
+
 
 /* ----- CORES PARA DEBUG ----- */
 /* .lista {
