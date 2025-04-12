@@ -166,15 +166,39 @@ body {
     justify-content: space-between;
 }
 
-.video{
+.cntflex .video{
     margin: 7px 10px;
 }
-.video-do-lado{
+.video-do-lado   {
+    position: relative;
+    top: 30px;
+    right: 1%;
+    left: 5px;
     display: flex;
-    height: 10px;
-    width: 10px;
+    height: 70px;
 
 }
+.textvideo{
+    position: relative;
+    top: 30px;
+    right: 1%;
+    left: 10px;
+    display: flex;
+    font-size: 13px;
+    padding: 10;
+ }
+
+.MU{
+    position: relative;
+    top: 60px;
+    right: 10%;
+    left: 0px;
+    display: flex;
+    font-size: 10px;
+    padding-bottom: 10px;
+    
+}
+
 
 .textocorpo{
     font-family: "Roboto","Arial",sans-serif;
@@ -182,6 +206,7 @@ body {
     line-height: 2.8rem;
     font-weight: 30;
     white-space: normal;
+    position: absolute;
 }
 
 
@@ -195,7 +220,7 @@ body {
 
 
 /* ----- CORES PARA DEBUG ----- */
-/* .lista {
+.lista {
     background-color: rgba(255, 0, 0, 0.3); 
 }
 .centeritem {
@@ -203,5 +228,14 @@ body {
 }
 .rightitem {
     background-color: rgba(0, 0, 255, 0.3); 
-} */
+}
+.textvideo{
+    background-color: yellow;
+}
+.video-do-lado{
+    background-color: cyan;
+}
+.MU{
+    background-color: orange;
+}
 /* ----- FIM DAS CORES PARA DEBUG ----- */
