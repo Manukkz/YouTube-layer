@@ -24,15 +24,6 @@ body {
     cursor: pointer;
 }
 
-.logo-youtube{
-    /* display: flex;
-    width: 100px;
-    height: 100px;
-     */
-     
-}
-
-
 
                                                   /* Container Central */
 .centeritem {
@@ -169,8 +160,20 @@ body {
 }
                                 /* CORPO */
 
+
+.cntflex{
+    display: flex;
+    justify-content: space-between;
+}
+
 .video{
     margin: 7px 10px;
+}
+.video-do-lado{
+    display: flex;
+    height: 10px;
+    width: 10px;
+
 }
 
 .textocorpo{
