@@ -3,6 +3,7 @@ body {
     background-color: rgb(15, 15, 15);
     color: #eee;
     font-family: sans-serif;
+    margin: 7px 20px;
 }
 
                                                   /* Cabeçalho */
@@ -22,6 +23,16 @@ body {
     color: #eee;
     cursor: pointer;
 }
+
+.logo-youtube{
+    /* display: flex;
+    width: 100px;
+    height: 100px;
+     */
+     
+}
+
+
 
                                                   /* Container Central */
 .centeritem {
@@ -158,11 +169,20 @@ body {
 }
                                 /* CORPO */
 
-.videotitle{
-    font-size:
+.video{
+    margin: 7px 10px;
 }
 
-.
+.textocorpo{
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 12px;
+    line-height: 2.8rem;
+    font-weight: 30;
+    white-space: normal;
+}
+
+
+
 
 
 
