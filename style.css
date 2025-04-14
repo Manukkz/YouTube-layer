@@ -160,6 +160,15 @@ body {
 }
                                 /* CORPO */
 
+ .conteudo-principal {
+    display: flex;
+    padding: 20px; /* Espaçamento geral */
+    gap: 24px; /* Espaço entre a coluna do vídeo principal e a coluna lateral */
+    align-items: flex-start; /* Alinha o topo das colunas */
+    max-width: 1700px; /* Limita a largura máxima para telas muito grandes */
+    margin: 0 auto; /* Centraliza o conteúdo principal */
+}
+
 
 .cntflex{
     display: flex;
@@ -169,47 +178,56 @@ body {
 .cntflex .video{
     margin: 7px 10px;
 }
-.video-do-lado   {
-    position: relative;
-    top: 30px;
-    right: 1%;
-    left: 5px;
-    display: flex;
-    height: 70px;
 
-}
-.textvideo{
-    position: relative;
-    top: 30px;
-    right: 1%;
-    left: 10px;
-    display: flex;
-    font-size: 13px;
-    padding: 10;
- }
-
-.MU{
-    position: relative;
-    top: 60px;
-    right: 10%;
-    left: 0px;
-    display: flex;
-    font-size: 10px;
-    padding-bottom: 10px;
-    
+                /* Miniatura do Vídeo Lateral */
+.miniatura-lateral {
+    width: 160px; /* Largura fixa da miniatura */
+    flex-shrink: 0; /* Impede que a miniatura encolha */
 }
 
+.miniatura-lateral img {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantém proporção da miniatura */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    border-radius: 4px; /* Bordas levemente arredondadas */
+    background-color: #333; /* Cor de fundo enquanto a imagem carrega */
+}
 
-.textocorpo{
-    font-family: "Roboto","Arial",sans-serif;
-    font-size: 12px;
-    line-height: 2.8rem;
-    font-weight: 30;
-    white-space: normal;
-    position: absolute;
+/* Bloco de Texto ao Lado da Miniatura */
+.info-lateral {
+    flex: 1; /* Ocupa o espaço restante ao lado da miniatura */
+    min-width: 0; /* Permite que o texto quebre corretamente */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha texto ao topo */
+}
+
+/* Título do Vídeo Lateral */
+.titulo-lateral {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #f1f1f1;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    /* Evita que o texto vaze (mostra reticências) */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Máximo de 2 linhas */
+    -webkit-box-orient: vertical;
+    max-height: 2.6em; /* Aproximadamente 2 * line-height */
 }
 
 
+.canal-lateral, .views-lateral{
+    font-size: 0.8rem;
+    color: #aaa;
+    line-height: 1.3;
+    margin-bottom: 2px;
+    white-space: nowrap; /* Impede que quebre linha */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona "..." se não couber */
+    display: block; /* Garante que fiquem em linhas separadas */
+}
 
 
 
@@ -220,22 +238,10 @@ body {
 
 
 /* ----- CORES PARA DEBUG ----- */
-.lista {
-    background-color: rgba(255, 0, 0, 0.3); 
-}
-.centeritem {
-    background-color: rgba(0, 255, 0, 0.3); 
-}
-.rightitem {
-    background-color: rgba(0, 0, 255, 0.3); 
-}
-.textvideo{
-    background-color: yellow;
-}
-.video-do-lado{
-    background-color: cyan;
-}
-.MU{
-    background-color: orange;
-}
+.conteudo-principal { background-color: rgb(77, 0, 77); } 
+.video { background-color: rgb(0, 255, 55); } 
+.videos-laterais { background-color: rgba(0, 0, 255, 0.925); } 
+.item-video-lateral { background-color: rgba(255, 166, 0, 0.747); } 
+.miniatura-lateral { background-color: rgba(0, 255, 255, 0.89); } 
+.info-lateral { background-color: rgba(255, 255, 0, 0.829); } 
 /* ----- FIM DAS CORES PARA DEBUG ----- */
