@@ -176,6 +176,11 @@ body {
     flex-shrink: 0; 
 }
 
+.videos-laterais{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
 .miniatura-lateral img {
     width: 100%;
     border-radius: 4px; 
