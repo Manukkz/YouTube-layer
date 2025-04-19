@@ -231,9 +231,23 @@ body {
 }
 
 
+                                /* Informações */
 
+.canal-desc{
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 6%;
+    max-width: 400px;
+    background-color: #111;
+    object-fit: cover;
+    /* line-height: 2em;
+    background-color:transparent;
+    cursor:pointer;  */
+}
 
-
+.canal-desc:hover{
+    background-color: #eeeeee45;
+}
 
 
 
