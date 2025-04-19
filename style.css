@@ -276,6 +276,19 @@ button{
     margin: 0;
 }
 
+.inscrever .notification,.subs {
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.4em;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 18px;
+    color: #eee;
+    gap: 8px;
+
+}
 
 /* ----- CORES PARA DEBUG ----- */
 /* .conteudo-principal { background-color: rgb(77, 0, 77); } 
