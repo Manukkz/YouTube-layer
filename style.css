@@ -169,6 +169,17 @@ body {
     margin: 0 auto; /* Centraliza o conteúdo principal */
 }
 
+.info-video-principal{
+    display: flex;
+
+}
+.titulo-principal{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 1.18rem;
+    line-height: 2.8rem;
+    font-weight: 700;
+    
+}
 
                     /* Miniatura do Vídeo Lateral */
 .miniatura-lateral {
@@ -246,7 +257,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.5em;
+    gap: 0.8em;
 }
 
 .inscritos{
@@ -276,19 +287,31 @@ button{
     margin: 0;
 }
 
-.inscrever .notification,.subs {
+.inscrever .notification {
     background-color: #111;
+    display: block;
     border: none;
     cursor: pointer;
-    padding: 0 0.4em;
+    padding: 1 0.4em;
+    margin: 0 1em;
+    background-color: #333;
+    border: none;
     height: 36px;
     font-size: 14px;
     line-height: 36px;
     border-radius: 18px;
-    color: #eee;
-    gap: 8px;
-
+    color: #ffff;
+    
 }
+
+.inscrever .notification:hover{
+    background-color: #444;
+}
+
+
+
+
+
 
 /* ----- CORES PARA DEBUG ----- */
 /* .conteudo-principal { background-color: rgb(77, 0, 77); } 
