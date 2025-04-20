@@ -288,19 +288,18 @@ button{
 }
 
 .inscrever .notification {
-    background-color: #111;
+    background-color: #333;
     display: block;
     border: none;
     cursor: pointer;
-    padding: 1 0.4em;
+    padding: 1 0.8em;
     margin: 0 1em;
-    background-color: #333;
     border: none;
     height: 36px;
     font-size: 14px;
     line-height: 36px;
     border-radius: 18px;
-    color: #ffff;
+    color: #ffffff;
     
 }
 
@@ -308,8 +307,26 @@ button{
     background-color: #444;
 }
 
-
-
+.like-e-dislike{
+    margin: 0 10em;
+    background-color: #111;
+    display: block;
+    
+}
+.like{
+    background-color: #111;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.8em;
+    align-content: space-between;
+    background-color: #333;
+    border: none;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 18px;
+    color: #ffff;
+}
 
 
 
