@@ -276,10 +276,22 @@ section#conteudo-principal {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 18px;
     padding: 0 16px;
     height: 56px;
+    padding-bottom: 1em; /* Pode se dizer que é a distancia da div pra outra abaixo */
+    border-bottom: 1px solid #e0e0e0; /* O nome ja diz: borda inferior. */
 }
+
+/* .desc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    justify-content: flex-end;
+  } */
+  
 
 .inscritos{
     font-size: 0.8rem;
@@ -334,14 +346,20 @@ button{
 
 }
 .like-button, .dislike-button{
-  display: flex;
-  align-items: center;
-  padding: 3px 1px;
-  border: 1px  #444 ;
-  border-radius: 20px;
-  margin-right: 10px;
-  cursor: pointer;
-  gap: 10px;
+    background-color: #333;
+    display: flex;
+    border: none;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 18px;
+    color: #eee;
+    font-size: 15px;     
+    cursor: pointer;       
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 0 auto;
 }
 
 .like-button i, .dislike-button i {
@@ -356,8 +374,49 @@ button{
 
 
 .like-button:hover, .dislike-button:hover{
+    background-color: #444;
+    
+}
+.desc .compartilhar{
     background-color: #333;
+    border: none;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 18px;
+    color: #eee;
+    font-size: 15px;     
+    cursor: pointer;       
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 0 auto;
+    display: flex;
+ 
+}
 
+.compartilhar:hover{
+    background-color: #444;
+}
+
+.menu{
+    background-color: #333;
+    border: none;
+    padding: 0 16px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    border-radius: 18px;
+    color: #eee;
+    font-size: 15px;     
+    cursor: pointer;       
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 0 auto;
+    display: flex;
+}
+.menu:hover{ 
+    background-color: #444;
 }
 
 .ad {
@@ -379,6 +438,9 @@ button{
 }
 .ad>.ad-desc p {
 }
+
+
+
 /* ----- CORES PARA DEBUG ----- */
 /* .conteudo-principal { background-color: rgb(77, 0, 77); } 
 .video { background-color: rgb(0, 255, 55); } 
