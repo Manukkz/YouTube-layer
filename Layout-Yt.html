@@ -89,8 +89,8 @@
             </button>
         </div> <!-- fim Itens a Direita -->
     </header> <!-- Cabeçalho -->
-    <section>
-        <div class="conteudo-principal">
+    <main>
+        <section id="conteudo-principal">
             <div class="video">
                 <iframe width="854" height="480" src="https://www.youtube.com/embed/mBQTmcyWPgY"
                     title="【Legend】デビッド・ベッカム  クロス＆パス 1999-2003【 David Beckham 】" frameborder="0"
@@ -113,14 +113,33 @@
                             <i class="bi bi-bell"> inscritos</i>
                         </button>
                     </div> <!-- subs+ring -->
-                    <div class="like-e-dislike">
-                        <button class="like"><i class="bi bi-hand-thumbs-up">18 Mil</i></button>
-                        <button class="dislike"><i class="bi bi-hand-thumbs-down"></i></button>
-                    </div>
-                </div><!-- Infomações -->
-
-            </div> <!-- Video -->
+                    <div class="like-e-dislike-container">
+                        <div class="like-button">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <span> 18 Mil/ </span>
+                            <div class="dislike-button">
+                                <i class="bi bi-hand-thumbs-down"></i>
+                            </div> <!-- like-dislike -->
+                        </div><!-- like-e-dislike-container -->
+                    </div><!-- Infomações -->
+                </div>
+            </div>
+        </section>
+        <section>
             <div class="videos-laterais">
+                <div class="ad">
+                    <figure>
+                        <img src="https://placehold.co/196x320" />
+                    </figure>
+                    <div class="ad-desc">
+                        <h3>Propaganda Massa</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea ipsa dolorum ut iusto doloribus libero dolorem eos necessitatibus deleniti reiciendis cumque rem, velit, consequatur beatae porro quis officia! Consequuntur, iure.
+                        Doloribus, excepturi commodi magni esse fuga, recusandae.
+                        </p>
+                    </div>
+
+                </div>
+
                 <div class="item-video-lateral">
                     <div class="miniatura-lateral">
                         <img id="imagem-lateral" alt="Beckham-video" src="img/beckhamgoals.avif">
@@ -202,10 +221,12 @@
                     </div>
                 </div> <!-- item-video-lateral -->
             </div> <!--videos-laterais  -->
-        </div> <!--videos-laterais  -->
-        </div>
 
-    </section>
+            </div> <!--videos-laterais  -->
+        </section>
+    </main>
+
+
 
 </body>
 
