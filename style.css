@@ -280,18 +280,12 @@ section#conteudo-principal {
     padding: 0 16px;
     height: 56px;
     padding-bottom: 1em; /* Pode se dizer que é a distancia da div pra outra abaixo */
-    border-bottom: 1px solid #e0e0e0; /* O nome ja diz: borda inferior. */
+    border-bottom: 0.1px solid #e0e0e0; /* O nome ja diz: borda inferior. */
 }
 
-/* .desc {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #e0e0e0;
-    justify-content: flex-end;
-  } */
-  
+
+
+
 
 .inscritos{
     font-size: 0.8rem;
@@ -377,6 +371,8 @@ button{
     background-color: #444;
     
 }
+
+
 .desc .compartilhar{
     background-color: #333;
     border: none;
@@ -419,6 +415,74 @@ button{
     background-color: #444;
 }
 
+                                        /* Comentarios */
+
+.sobre{
+    display: flex;
+    margin: 0 3em;
+    border: #444;
+    padding-bottom: 1em;
+    border-bottom: solid white;
+}
+.sobre p{
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+                /* === ÁREA DO COMENTÁRIO === */
+
+/* Container principal da área de input */
+.canal-seu {
+    display: flex;
+    margin-top: 4em;
+    align-items: flex-start; /* Alinha topo do avatar com topo do input */
+    margin-bottom: 30px; /* Espaço abaixo da área de input */
+    padding: 0 15px; /* Mesmo padding da seção de comentários, se aplicável */
+}
+
+                /* Avatar do usuário */
+.canal-seu #imagem { 
+    width: 40px;        
+    height: 40px;       
+    border-radius: 50%; 
+    margin-right: 15px; 
+    object-fit: cover;  /* Cobre o espaço sem distorcer */
+    flex-shrink: 0;     /* Impede que o avatar encolha */
+    margin: 0 1.8em;
+}
+
+
+.canal-seu .comentarios {
+    width: 100%; 
+   
+}
+
+
+.canal-seu .comentarios input[type="text"] {
+    width: 100%; 
+    background: none; 
+    border: none; 
+    border-bottom: 1px solid #555; /* Apenas linha inferior */
+    color: #eee; 
+    font-size: 0.95rem; /* Tamanho da fonte */
+    padding: 8px 0; /* Espaçamento interno vertical, sem horizontal */
+    outline: none; /* Remove o contorno azul/laranja ao focar */
+
+}
+
+/* Efeito ao focar no input */
+.canal-seu .comentarios input[type="text"]:focus {
+    border-bottom-color: #aaa; /* Muda cor da linha ao focar */
+}
+
+/* Estilo do placeholder */
+.canal-seu .comentarios input[type="text"]::placeholder {
+    color: #aaa; /* Cor do texto de placeholder */
+}
+
+
+ 
 .ad {
     display: flex;
     flex-direction: row;
